@@ -1,0 +1,47 @@
+.details-wrapper {
+  width: 30%;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  overflow: hidden;
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+    min-height: 85px;
+    overflow-x: scroll;
+    background: #f0f8ff;
+
+    .list {
+      display: flex;
+
+      .details-row {
+        min-width: 200px;
+        text-align: center;
+
+        & + .details-row {
+          border-left: 1px solid;
+          padding-top: 0;
+          margin-top: 0;
+          padding-left: 10px;
+          margin-left: 10px;
+          border-top: none;
+        }
+      }
+    }
+  }
+}
+
+.details {
+  overflow-y: auto;
+  height: 100%;
+
+  .details-row {
+    & + .details-row {
+      padding-top: 10px;
+      margin-top: 10px;
+      border-top: 1px solid #000;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.cell {
+  width: 19%;
+  border: 1px solid;
+
+  button {
+    min-height: 300px;
+    width: 100%;
+  }
+}
+
+.img-wrapper {
+  display: block;
+
+  img {
+    width: 100%;
+  }
+}
+
+.info-wrapper {
+  display: inline-block;
+  padding: 5px;
+}
+
+.info {
+  display: block;
+  text-align: left;
+
+  & + & {
+    margin-top: 10px;
+  }
+}

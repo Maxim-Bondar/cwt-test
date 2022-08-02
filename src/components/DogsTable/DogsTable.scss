@@ -1,0 +1,16 @@
+.table-wrapper {
+  width: 70%;
+  overflow-x: auto;
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.dogs-table {
+  height: 100%;
+  border: 1px solid black;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
